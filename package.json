@@ -1,0 +1,46 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject"
+  },
+  "dependencies": {
+    "@firebase/firestore": "^1.13.1",
+    "@react-native-community/masked-view": "0.1.6",
+    "@react-native-firebase/app": "^6.4.0",
+    "@react-native-firebase/firestore": "^6.4.0",
+    "base-64": "^0.1.0",
+    "dotenv": "^8.2.0",
+    "expo": "^37.0.0",
+    "expo-font": "~8.1.0",
+    "expo-linear-gradient": "~8.1.0",
+    "firebase": "7.9.0",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-37.0.1.tar.gz",
+    "react-native-gesture-handler": "~1.6.0",
+    "react-native-linear-gradient": "^2.5.6",
+    "react-native-maps": "0.26.1",
+    "react-native-modal": "^11.5.6",
+    "react-native-modals": "^0.19.9",
+    "react-native-picker-select": "^6.6.0",
+    "react-native-reanimated": "~1.7.0",
+    "react-native-safe-area-context": "0.7.3",
+    "react-native-screens": "~2.2.0",
+    "react-native-spin-picker": "0.0.2",
+    "react-native-spinkit": "^0.1.5",
+    "react-native-textinput-effects": "^0.4.2",
+    "react-native-web": "^0.11.7",
+    "react-navigation": "^4.3.6",
+    "react-navigation-stack": "^2.3.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "babel-preset-expo": "^8.1.0",
+    "react-native-dotenv": "^0.2.0"
+  },
+  "private": true
+}
