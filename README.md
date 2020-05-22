@@ -20,6 +20,21 @@ This project was bootstrapped with [Create React Native App](https://github.com/
 * [Environment Variables](#environment-variables)
   * [Configuring Packager IP Address](#configuring-packager-ip-address)
 
+## Project Overview
+
+The name of this small application is Spot and its main purpose is to help users park at their university parking garages with less stress through the help of other users who would flag certain garages depending on their statuses. Examples of certain predicaments include,
+
+- Construction going on near a parking garage, thereby increasing traffic and congestion which is not ideal when needed to get to a class on time.
+
+- University parking police checking decals. Universities are not always transparent about renewing decals annually so having this in mind while finding parking can provoke stress on students and causes tardiness or absence to important academic events. Parking in teacher spots would yield a parking ticket but Spot will help keep tabs on whether you should return back to your vehicle if need be.
+
+I used the [Cloud Firestore](https://firebase.google.com/docs/firestore) backend offered by Google to support calls to the database and user authentication. I also used the [React Native Framework](https://reactnative.dev/) to create a simple, friendly UI on the frontend. Additionally, I used the Expo framework to support both iOS and Android compatibility.
+
+### User Authentication
+
+
+
+
 ## Updating to New Releases
 
 You should only need to update the global installation of `create-react-native-app` very rarely, ideally never.
