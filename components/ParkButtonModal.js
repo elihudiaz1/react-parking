@@ -103,7 +103,7 @@ export default ParkButtonModal
 const styles = StyleSheet.create({
  modalContent: {
   width: 400, 
-  height: 800, 
+  height: 900, 
   alignItems: 'center', 
   marginTop: 40, 
   backgroundColor: 'white'
@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
   justifyContent: 'center',
   alignItems:'center',
   width: 420,
-  height: 300,
+  height: 500,
   borderRadius: 45
  },
  okGradient: {

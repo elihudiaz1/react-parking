@@ -233,9 +233,7 @@ export default class Map extends React.Component {
            parkedTime: doc.data().timer,
            timeOfStart: doc.data().time_of_start.seconds
         })
-        console.log(`ACTIVE GARAGE IS: ${this.state.activeGarage}`)
         if(this.state.activeGarage !== 'none') {
-          console.log(`activeGarage is not equal to none so checking if timer ran out`)
           this.checkIfTimerRanOut()
         }
       }
@@ -263,7 +261,6 @@ export default class Map extends React.Component {
     if (nextAppState === 'active') {
 
       if(this.state.activeGarage !== 'none') {
-        console.log(`Checking if timer ran out in the _handleAppStateChange function`)
         this.checkIfTimerRanOut()
       }
    
@@ -280,21 +277,14 @@ export default class Map extends React.Component {
  }
 
  checkIfTimerRanOut() {
-   console.log('Checking if timer ran out');
   if(this.state.timeOfStart !== null) {
-    console.log('timeOfStart is not equal to null');
     const currentTime = firebase.firestore.Timestamp.fromDate(new Date())
     let timePassed = currentTime.seconds - this.state.timeOfStart
   
-    console.log(`timePassed is now ${timePassed} which is equal to currentTime: ${currentTime.seconds} - timeOfStart: ${this.state.timeOfStart}`)
-    console.log(`The amount of time set to park is (parkedTime): ${this.state.parkedTime}`)
-    
 
     if(timePassed > this.state.parkedTime) {
-      console.log(`timePassed is greater than parkedTime, therefore resetting activeGarage`);
       this.resetActiveGarage()
     } else {
-      console.log(`Checking if ${this.state.activeGarage} garage was alerted....`)
       this.checkIfAlerted()
     }
   }
@@ -303,7 +293,6 @@ export default class Map extends React.Component {
 
 
  checkIfAlerted() {
-  console.log(`Entering the checkIfAlerted function`)
   let lastAlerted = 0
   this.updateStateArray();
   this.state.garages.map(garage => {
@@ -311,11 +300,7 @@ export default class Map extends React.Component {
       lastAlerted = garage.last_alert.seconds
     }   
   })
-  console.log(`lastAlerted is: ${lastAlerted}`)
-  console.log(`timeOfStart is: ${this.state.timeOfStart}`)
   if(lastAlerted > this.state.timeOfStart ) {
-    console.log(`${this.state.activeGarage} was alerted`)  
-    console.log(`State of warningModalinconditional: ${this.state.warningModalOpen}`)
     this.warningModalState()
   }
  }
@@ -361,18 +346,11 @@ export default class Map extends React.Component {
     time_of_start: firebase.firestore.Timestamp.fromDate(new Date()),
     timer: parseInt(this.state.parkedTime)
   })
-
-
-  console.log(`Updating User Fields `)
-  console.log(`activated_garage: ${this.state.activeGarage}`)
-  console.log(`timer: ${parseInt(this.state.parkedTime)}` )
-
  }
 
  resetActiveGarage() {
 
   this.setState({ activeGarage: 'none'})
-  console.log(`Reseted Garage to: ${this.state.activeGarage}`)
    
   firebase.firestore().collection('users').doc(firebase.auth().currentUser.uid).update({
     activated_garage: 'none'
