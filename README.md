@@ -36,7 +36,7 @@ I used the [Cloud Firestore](https://firebase.google.com/docs/firestore) backend
 
 [
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/47718018/82693373-6f203880-9c2f-11ea-8295-e9132fc9317b.gif)
-](url)
+](url).
 
 ### Signing Out of App:
 
