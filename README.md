@@ -31,12 +31,11 @@ The name of this small application is Spot and its main purpose is to help users
 I used the [Cloud Firestore](https://firebase.google.com/docs/firestore) backend offered by Google to support calls to the database and user authentication. I also used the [React Native Framework](https://reactnative.dev/) to create a simple, friendly UI on the frontend. Additionally, I used the Expo framework to support both iOS and Android compatibility.
 
 ### User Authentication:
-<b/>
-<b/>
+
 [
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/47718018/82693373-6f203880-9c2f-11ea-8295-e9132fc9317b.gif)
-](url).
-<b/>
+](url)
+
 ### Signing Out of App:
 
 
