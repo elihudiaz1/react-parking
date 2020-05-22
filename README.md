@@ -8,6 +8,7 @@ This project was bootstrapped with [Create React Native App](https://github.com/
 
 ## Table of Contents
 
+* [Project Overview](#Project Overview)
 * [Updating to New Releases](#updating-to-new-releases)
 * [Available Scripts](#available-scripts)
   * [npm start](#npm-start)
@@ -76,7 +77,7 @@ This will start the process of "ejecting" from Create React Native App's build s
 
 ## Google Maps API Key
 
-You can edit `app.json` to include your Google Maps API key under expo.android.config.googleMaps.apiKey
+You can edit `app.json` to include your Google Maps API key under expo.android.config.googleMaps.apiKey.
 Similarly, you can add the API key to expo.config.googleMaps.ApiKey for iOS development.
 
 ## Writing and Running Tests
