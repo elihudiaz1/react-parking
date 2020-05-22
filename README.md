@@ -30,36 +30,61 @@ The name of this small application is Spot and its main purpose is to help users
 
 I used the [Cloud Firestore](https://firebase.google.com/docs/firestore) backend offered by Google to support calls to the database and user authentication. I also used the [React Native Framework](https://reactnative.dev/) to create a simple, friendly UI on the frontend. Additionally, I used the Expo framework to support both iOS and Android compatibility.
 
-### User Authentication
+### User Authentication:
+
+
 
 [
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/47718018/82693373-6f203880-9c2f-11ea-8295-e9132fc9317b.gif)
 ](url)
 
+### Signing Out of App:
+
+
+
 [
 ![signingOut](https://user-images.githubusercontent.com/47718018/82693544-bc040f00-9c2f-11ea-8f32-85be0f14eea4.gif)
 ](url)
 
-### Real Time Status of Garages
+
+
+### Real Time Status of Garages:
+
+
+
 
 [
 ![tourOfGarages](https://user-images.githubusercontent.com/47718018/82693475-9bd45000-9c2f-11ea-88d0-b3cffee76287.gif)
 ](url)
 
+
+
 ### Marking Where You Parked
+
+
+
 
 [
 ![markingSpot](https://user-images.githubusercontent.com/47718018/82693614-d50cc000-9c2f-11ea-8de2-03adfeb247bb.gif)
 ](url)
 
+
+
 ### Flagging a Garage
+
+
+
 
 [
 ![alertingGarage](https://user-images.githubusercontent.com/47718018/82693663-ec4bad80-9c2f-11ea-8c85-67412c8dcb04.gif)
 ](url)
 
 
+
 ### Warning User When App is back in the Foreground
+
+
+
 
 [
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/47718018/82693798-27e67780-9c30-11ea-8407-be5db10980d5.gif)
